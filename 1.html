@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+
+<style>
+body{
+  margin:0;
+}
+  a{
+    color:black;
+    text-decoration:  none;
+}
+  #active {
+    color: red;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align:center;
+    border-bottom: 1px solid red;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right: 1px solid red;
+    width: 100px;
+    margin:0;
+    padding: 20px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px) {
+    #grid{
+      display:block;
+  }
+  ol{
+    border-right:none;
+}
+h1 {
+border-bottom:none;
+}
+}
+
+  </style>
+
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw"> html</a></li>
+      <li><a href="2.html" class="saw" id="active"> css</a></li>
+      <li><a href="3.html"> javascript</a></li><br>
+    </ol>
+
+    <div id="article">
+    <h2>한글이란 무엇인가?</h2>
+    <ul>
+      <li>asdf122</li>
+      <li>geee5922</li>
+      <li>vdvdds648</li>
+    </ul>
+    <h2>imhangeul</h2>
+
+    hello! my name is <strong><u>imhangeul.</u></strong>
+    <a href="https://ko.dict.naver.com/#/entry/koko/bc1b61f8b2054d0eb66651df15eec166"
+    target="_blank" title= "웃다">hahahahahaha</a>
+    <p>
+    html very hard im sick..... 아니 개어렵네 이걸 어케하라는겨 빡치기 시작한다.
+    나한테 왜그러는거여,....... 이것도 어려워 뒤지겠는데 자바스크립트는 어케하누?
+    막막하다. 진짜 프로젝트 개 시박꺼;;
+    </p><p style="margin-top:45px;"> head bing bing.. borad...</p>
+    <img src="hg.jpg" width="10%">
+    </div>
+</div>
+</body>
+</html>
