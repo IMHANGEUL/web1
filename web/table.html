@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="style.css">
+<script src="colors.js"></script>
+
+    <style>
+
+    p{
+      line-height:25px;
+      text-indent:10px;
+    }
+      body{
+        background-color:none;
+      }
+
+      table, th, td {border : 1.5px solid black;}
+      table { width:55%; height:55%;
+              font-size: 12px;}
+
+      #c  {text-align: center;}
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1><a href="index.html">대전폴리텍대학</a></h1>
+    <div id="grid">
+  <ol>
+    <li><a href="1.html"> 정보통신시스템</a></li><br>
+    <li><a href="2.html"> 기계시스템</a></li><br>
+    <li><a href="3.html"> 전기전자제어</a></li><br>
+    <br>
+
+    <br><input id="night_day" type="button" value="night" onclick="
+    ndh(this);
+">
+
+
+  </ol>
+  <div id="grid">
+    <h2>교과내용</h2>
+<table>
+  <tr> <th style colspan="2">분류</th> <th>1학년1학기</th> <th>1학년2학기</th> <th>2학년1학기</th> <th>2학년2학기</th> </tr>
+  <tr> <td id="c" style rowspan="2">교양</td><td id="c">필수</td> <td>영어<br>스포츠리더십</td> <td>직업과경력개발</td> <td></td> <td></td> </tr>
+  <tr> <td id="c">선택</td> <td>한국사<br> 공학기초<br> 멘토링<br> 참인폴리텍<br></td> <td>TOEIC<br> 작문과표현<br> 경영학원론</td> <td>실용영어<br> 경제학이해<br> 발명과 창업<br>참인 엔지니어<br>삶과철학<br>캄퓨터활용</td> <td>봉사활동</td>
+  <tr> <td id="c"style rowspan="2">전공이론</td> <td id="c">표준</td> <td>기초전자회로<br>디지털공학</td> <td></td> <td>통신전자회로<br>정보통신공학</td><td></td>
+  <tr> <td id="c">특성</td> <td></td><td>전자계산기구조<br>전송공학<br>회로이론</td> <td></td> <td></td>
+  <tr> <td id="c"style rowspan="2">전공실습</td> <td id="c">표준</td> <td>통신전자회로실습<br>프로그래밍실습</td> <td>마이크로프로세서실습</td><td>네트워크구축실습</td><td></td>
+  <tr> <td id="c">특성</td> <td>앱통신제어실습1<br>IOT실습</td> <td>프로그래밍응용실습<br>디지털회로실습<br>IOT응용실습</td> <td>전자회로응용실습<br>임베디드실습<br>정보보안실습</td> <td>네트워크운용실습<br>서버구축실습<br>시스템보안실습<br>앱통신제어실습2</td>
+  <tr> <td id="c"style rowspan="2">전공심화실습</td> <td id="c">문제원형,프로젝트</td> <td>문제원형프로젝트</td> <td>프로젝트실습1</td><td>프로젝트실습2</td><td>프로젝트실습3</td>
+  <tr> <td id="c">현장실습</td> <td></td> <td>현장실습1</td> <td></td> <td>현장실습2</td>
+</div>
+</div>
+</body>
+
+</html>

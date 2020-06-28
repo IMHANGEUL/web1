@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<style>
+	</style>
+
+	<title>Insert title here</title>
+
+	<script>
+	</script>
+
+</head>
+
+<body>
+
+	<button id="play">Play</button>
+
+	<script>
+
+		function playSound( path ) {
+
+		  if ( typeof window.Audio === 'function' ) {
+
+			var audio = new Audio();
+			audio.src = path;
+			audio.play();
+
+		  }
+		}
+
+		document.getElementById( 'play' ).addEventListener( 'click', function() {
+
+		  playSound( 'D:\음악\겁.mp3' );
+
+		});
+
+	</script>
+
+</body>
+
+</html>
