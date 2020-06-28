@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>휴게실</title>
+<style>
+#jpark { width: 200px; position: absolute; left: 300px; top: 200px}
+
+</style>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="colors.js"></script>
+
+</head>
+
+<body>
+
+
+  <h1><a href="index.html"
+    target="_blank">휴게실</a></h1>
+<div id="grid">
+<ol>
+  <li><a href="1.html"> 정보통신시스템</a></li><br>
+  <li><a href="2.html"> 기계시스템</a></li><br>
+  <li><a href="3.html"> 전기전자제어</a></li><br>
+  <li><a href="Music.html"> 휴게실</a></li><br>
+  <br>
+
+
+    <br><input id="night_day" type="button" value="night" onclick="
+    ndh(this);
+">
+
+</ol>
+
+<div>
+<h2>음악듣기</h2>
+
+
+  <img src="j park.jpg" id="jpark">
+
+  <audio id ="atwu" controls>
+    <source src="C:\Users\ing10\Desktop\web\박재범 - All The Way Up.mp3"
+    type="audio/mpeg">
+  </audio><br>
+
+  <button onclick="enableControls()" type="button">활성화</button>
+  <button onclick="disableControls()" type="button">비활성화</button>
+
+
+
+
+  <script>
+  var x = document.getElementById("atwu");
+  function enableControls() {
+    x.controls = true;
+    x.load();
+  }
+
+  function disableControls() {
+    x.controls = false;
+    x.load();
+  }
+
+  function checkControls() {
+    alert(x.controls);
+  }
+
+
+  var toggle = "off";
+
+    jpark.onclick = function(){
+      if(toggle == "off"){
+      jpark.setAttribute("src","all the way up.jpg")
+      toggle = "on";
+      atwu.play();
+    } else {
+      jpark.setAttribute("src","j park.jpg")
+
+      toggle = "off";
+      atwu.pause();
+    }
+    }
+
+  </script>
+  <p>
+
+    <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web-9jbc5fsylp.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+  </p>
+</body>
+</html>

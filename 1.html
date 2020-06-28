@@ -3,56 +3,11 @@
 <head>
 <title>정보통신시스템</title>
 <meta charset="utf-8">
-
+<link rel="stylesheet" href="style.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="colors.js"></script>
 <style>
-body{
-  margin:0;
-}
-  a{
-    color:black;
-    text-decoration:  none;
-}
-  #active {
-    color: red;
-  }
-
-  h1 {
-    font-size: 60px;
-    text-align:center;
-    border-bottom: 1px solid red;
-    margin:0;
-    padding:20px;
-  }
-  ol{
-    font-size: 12px;
-    border-right: 1px solid red;
-    width: 90px;
-    margin:0;
-    padding: 20px;
-  }
-  #grid{
-    display:grid;
-    grid-template-columns: 150px 1fr;
-  }
-  ol{
-    padding-left:33px;
-  }
-  #grid #article{
-    padding-left:25px;
-  }
-  @media(max-width:800px) {
-    #grid{
-      display:block;
-  }
-  ol{
-    border-right:none;
-}
-h1 {
-border-bottom:none;
-}
-}
-a:hover  {color:blue; text-decoration:black; }
- /* 마우스 링크 위 올려 놓았을때 */
 
  table th{
    border:2px solid black;
@@ -67,7 +22,15 @@ a:hover  {color:blue; text-decoration:black; }
     <ol>
       <li><a href="1.html" > 정보통신시스템</a></li><br>
       <li><a href="2.html" > 기계시스템</a></li><br>
-      <li><a href="3.html"> 전기전자제어</a></li>
+      <li><a href="3.html"> 전기전자제어</a></li><br>
+      <li><a href="Music.html"> 휴게실</a></li><br>
+      <br>
+
+
+      <br><input id="night_day" type="button" value="night" onclick="
+      ndh(this);
+  ">
+
     </ol>
 
     <div id="article">
@@ -84,6 +47,7 @@ a:hover  {color:blue; text-decoration:black; }
     </p><p style="margin-top:45px;"> </p>
     <img src=1.jpg width="55%">
   </center>
+
     <p>  <li> 학과소개 </li><br>
     ▶ IoT(사물인터넷) 관련 분야를 주축으로 통신운용 하드웨어,
     소프트웨어 등의 운영 능력 배양<br>
